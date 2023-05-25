@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <title>Converter</title>
+</head>
+
+<body>
+    <section id="caixa">
+        <form action="">
+            <h3>Escolha uma medida</h3>
+            <label for="celsius">Celsius:</label>
+            <input type="number" placeholder="Temperatura" id="celsius" oninput="corbodycel()">
+            <label for="fahrenheit" >Fahrenheit:</label >
+            <input type="number" id="fahrenheit" oninput="corbodyfah()" placeholder="Temperatura">
+            <label for="kelvin">Kelvin:</label>
+            <input type="number" id="kelvin" oninput="corbodykel()" placeholder="Temperatura">
+            <h4>Qual medida selecionada?</h4>
+            <section id="bot">
+                <input type="button" value="(°C)" onclick="convertercelsius()"><input type="button" value="(°F)" onclick="converterfahrenheit()"><input type="button" value="(°K)" onclick="converterkelvin()">
+            </section>
+            <img src="./imagem/pngwing.com.png" alt="Refresh" onclick="restart()">
+        </form>
+    </section>
+    <script src="index.js"></script>
+</body>
+
+</html>
